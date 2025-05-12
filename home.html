@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <style>
+        /* Basic styling for page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 8px;
+            background-color: #e1e1e1;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+
+        .slide {
+            animation: slideIn 1s ease-out;
+        }
+
+        /* Sliding animation */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .section-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .section-container > section {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .example-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .example-list li {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f2f2f2;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .example-list li span {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+        <p>Organize your tasks, stay productive!</p>
+    </header>
+
+    <div class="section-container">
+        <section class="slide">
+            <h2>Advantages of Using a Task Manager</h2>
+            <ul>
+                <li>Helps organize and prioritize tasks</li>
+                <li>Improves productivity and focus</li>
+                <li>Reduces the chances of missing important deadlines</li>
+                <li>Easy access to tasks from any device</li>
+                <li>Can be used for both personal and professional goals</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>How to Use a Task Manager</h2>
+            <ul>
+                <li>Set up your account and create a new task list</li>
+                <li>Add tasks with descriptions and deadlines</li>
+                <li>Set priorities and categorize tasks</li>
+                <li>Track your progress and mark tasks as completed</li>
+                <li>Get notifications for upcoming deadlines</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>Where Can You Use a Task Manager?</h2>
+            <ul>
+                <li>At work for project management and team collaboration</li>
+                <li>At home for managing household chores and personal tasks</li>
+                <li>In school for tracking assignments and exam preparations</li>
+                <li>On the go for planning your daily activities and goals</li>
+                <li>During events or planning special occasions</li>
+            </ul>
+        </section>
+    </div>
+
+    <section class="slide">
+        <h2>Examples of Tasks You Can Manage</h2>
+        <ul class="example-list">
+            <li><span>Work Task:</span> Complete project report - Deadline: 2024-12-05</li>
+            <li><span>Personal Task:</span> Buy groceries - Deadline: 2024-12-02</li>
+            <li><span>Study Task:</span> Prepare for math exam - Deadline: 2024-12-08</li>
+            <li><span>Chore Task:</span> Clean the garage - Deadline: 2024-12-04</li>
+            <li><span>Event Task:</span> Organize birthday party - Deadline: 2024-12-10</li>
+        </ul>
+        <a href="index.html">click here</a>
+    </section>
+</body>
+</html>
