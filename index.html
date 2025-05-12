@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="task-manager">
+        <h1>Task Manager</h1>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <input type="date" id="taskDateInput">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <ul id="taskList">
+            <!-- Tasks will be added here -->
+        </ul>
+        <button id="undoBtn" style="display:none;">Undo</button>
+        <div id="deletedTasks" style="display:none;">
+            <h3>Deleted Tasks</h3>
+            <ul id="deletedList">
+                <!-- Deleted tasks will be shown here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

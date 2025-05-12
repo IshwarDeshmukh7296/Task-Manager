@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.task-manager {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.task-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.task-input input[type="text"], .task-input input[type="date"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.task-date {
+    font-size: 12px;
+    color: #555;
+}
+
+.edit-date-btn {
+    padding: 5px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.edit-date-btn:hover {
+    background-color: #0b7dda;
+}
+
+.delete-btn {
+    padding: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background-color: #da190b;
+}
+
+#undoBtn {
+    margin-top: 20px;
+    background-color: #ff9800;
+}
+
+#undoBtn:hover {
+    background-color: #e68900;
+}
+
+#deletedTasks {
+    margin-top: 20px;
+}
